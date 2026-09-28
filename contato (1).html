@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registrar e acompanhar o caso — FalaDisso</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav aria-label="Navegação principal">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">Fala<span>Disso</span></a>
+    <ul class="nav-links">
+      <li><a href="o-que-e.html">O que é</a></li>
+      <li><a href="tipos.html">Tipos</a></li>
+      <li><a href="sinais.html">Sinais</a></li>
+      <li><a href="como-agir.html">Como agir</a></li>
+      <li><a href="ajuda.html">Canais de ajuda</a></li>
+    </ul>
+    <a href="contato.html" class="nav-cta">Pedir ajuda</a>
+  </div>
+</nav>
+
+<main id="topo">
+
+  <!-- INTRO -->
+  <section id="contato">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-kicker">Registrar e acompanhar</div>
+        <div>
+          <h2>Vamos te ajudar a formalizar isso</h2>
+          <p class="section-intro">Esta página tem três caminhos: registrar o caso na delegacia especializada, conversar agora com o CVV, e acompanhar o andamento do seu caso ao longo do tempo. Você pode usar um, dois ou os três.</p>
+        </div>
+      </div>
+      <div class="emergency-banner">
+        Este site não envia denúncias automaticamente — ele te leva direto ao canal oficial certo e te ajuda a organizar as informações. Em caso de risco imediato à vida, ligue <strong>190</strong> (Polícia) ou <strong>192</strong> (SAMU).
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- DELEGACIA -->
+  <section id="delegacia">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-kicker">Passo 1 — Registro oficial</div>
+        <div>
+          <h2>Registrar na delegacia especializada em crimes cibernéticos</h2>
+          <p class="section-intro">Cada estado tem seu próprio portal de Delegacia Eletrônica. Escolha o seu para abrir o canal oficial certo — o Boletim de Ocorrência online tem a mesma validade do presencial.</p>
+        </div>
+      </div>
+
+      <div class="delegacia-panel">
+        <div class="field-block">
+          <label for="estado">Seu estado</label>
+          <select id="estado"></select>
+        </div>
+
+        <div class="field-block">
+          <label for="relato">Relato para copiar e colar no formulário oficial</label>
+          <textarea id="relato" rows="6" placeholder="Descreva o que aconteceu: quando começou, em quais aplicativos ou redes, o que foi dito ou feito, se você tem prints ou links guardados..."></textarea>
+        </div>
+
+        <div class="delegacia-actions">
+          <button type="button" class="btn-primary" id="copiar-relato">Copiar relato</button>
+          <a href="#" target="_blank" rel="noopener" class="btn-ghost" id="abrir-delegacia">Abrir Delegacia Eletrônica do meu estado</a>
+        </div>
+        <p class="stats-note" id="copiar-status" aria-live="polite"></p>
+
+        <div class="checklist-box">
+          <h4>Antes de registrar, tenha em mãos:</h4>
+          <ul>
+            <li>Prints das mensagens, comentários ou perfis, com data e hora visíveis</li>
+            <li>Links dos conteúdos, se ainda estiverem no ar</li>
+            <li>Documento de identidade (RG ou CPF) e, se possível, login gov.br</li>
+            <li>Uma linha do tempo simples: quando começou e o que foi acontecendo</li>
+          </ul>
+        </div>
+        <p class="stats-note">Se o link não abrir corretamente, pesquise "delegacia eletrônica + seu estado" — os portais mudam de endereço com frequência. Também é possível denunciar anonimamente pelo Disque 181, e crimes contra crianças e adolescentes pelo Disque 100.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- CVV -->
+  <section id="cvv">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-kicker">A qualquer momento</div>
+        <div>
+          <h2>Precisa conversar agora?</h2>
+          <p class="section-intro">O CVV não registra denúncias — é uma linha de escuta emocional, gratuita e sigilosa, para quando o que você precisa é ser ouvido.</p>
+        </div>
+      </div>
+      <div class="help-grid">
+        <div class="help-card">
+          <h3>Ligar agora</h3>
+          <span class="num">188</span>
+          <p>Atendimento por telefone, 24 horas por dia, todos os dias.</p>
+        </div>
+        <div class="help-card">
+          <h3>Conversar por chat</h3>
+          <span class="num"><a href="https://www.cvv.org.br/chat/" target="_blank" rel="noopener">cvv.org.br/chat</a></span>
+          <p>Chat online com um voluntário treinado para escutar sem julgamento.</p>
+        </div>
+        <div class="help-card">
+          <h3>Escrever um e-mail</h3>
+          <span class="num"><a href="https://www.cvv.org.br/" target="_blank" rel="noopener">cvv.org.br</a></span>
+          <p>Se preferir escrever com calma, o site tem também atendimento por e-mail.</p>
+        </div>
+        <div class="help-card">
+          <h3>Central de Atendimento à Mulher</h3>
+          <span class="num">180</span>
+          <p>Apoio e orientação em situações de violência de gênero, inclusive online.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ACOMPANHAMENTO -->
+  <section id="acompanhar">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-kicker">Passo 2 — Acompanhamento</div>
+        <div>
+          <h2>Acompanhe o seu caso</h2>
+          <p class="section-intro">Guarde aqui o protocolo da delegacia e marque o que já foi feito. Esses dados ficam salvos só neste navegador, no seu dispositivo — ninguém mais tem acesso, e nada é enviado para nenhum servidor.</p>
+        </div>
+      </div>
+
+      <div class="tracker-panel">
+        <form id="tracker-form">
+          <div class="tracker-row">
+            <div class="field-block">
+              <label for="t-tipo">Etapa</label>
+              <select id="t-tipo">
+                <option value="prints">Prints e provas salvas</option>
+                <option value="bo">Boletim de Ocorrência registrado</option>
+                <option value="cvv">Conversei com o CVV</option>
+                <option value="escola">Escola ou responsável avisado</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+            <div class="field-block">
+              <label for="t-protocolo">Nº de protocolo / BO (se tiver)</label>
+              <input type="text" id="t-protocolo" placeholder="Ex: 2026.0001234-5">
+            </div>
+          </div>
+          <div class="field-block">
+            <label for="t-nota">Anotação</label>
+            <input type="text" id="t-nota" placeholder="Ex: Registrado na Delegacia Eletrônica de SP, aguardando retorno">
+          </div>
+          <button type="submit" class="btn-primary">Adicionar ao acompanhamento</button>
+        </form>
+
+        <div class="tracker-list" id="tracker-list">
+          <p class="stats-note" id="tracker-empty">Você ainda não adicionou nenhuma etapa.</p>
+        </div>
+
+        <button type="button" class="tracker-clear" id="tracker-clear">Apagar todo o histórico deste dispositivo</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="brand">Fala<span>Disso</span></a>
+        <p style="color:var(--ink-soft);font-size:0.92rem;margin-top:12px;max-width:32ch;">Um espaço de conscientização sobre cyberbullying, feito para ajudar quem sofre, quem vê e quem cuida.</p>
+      </div>
+      <div>
+        <h4>Entenda</h4>
+        <ul>
+          <li><a href="o-que-e.html">O que é</a></li>
+          <li><a href="tipos.html">Tipos</a></li>
+          <li><a href="sinais.html">Sinais de alerta</a></li>
+          <li><a href="dados.html">Em números</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Ajuda</h4>
+        <ul>
+          <li><a href="como-agir.html">Como agir</a></li>
+          <li><a href="ajuda.html">Canais de ajuda</a></li>
+          <li><a href="historias.html">Histórias</a></li>
+          <li><a href="contato.html">Registrar e acompanhar</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-disclaimer">Este site tem caráter informativo e não substitui atendimento médico, psicológico, social ou jurídico profissional. Em situações de risco, procure ajuda especializada imediatamente.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
